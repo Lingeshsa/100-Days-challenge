@@ -1,8 +1,14 @@
+import java.util.ArrayList;
+
 public class PatternPrograms {
     public static void main(String[] args) {
-        pattern12(5);
-
+        String[] sentences ={"alice and bob love leetcode", "i think so too", "this is great thanks very much"};
+        mostWordsFound(sentences);
     }
+
+    private static void mostWordsFound() {
+    }
+
     static void pattern1(int n){
         for (int row = 1; row < n; row++) {
             for (int cul = 1; cul <=n; cul++) {
@@ -243,4 +249,15 @@ public class PatternPrograms {
 
      */
 
+    public static int mostWordsFound(String[] sentences) {
+        int max = 0;
+        for (int i = 0; i < sentences.length; i++) {
+            max = Math.max(max, (sentences[i].split(" ")).length);
+        }
+        System.out.println(5);
+        return max;
+    }
 }
+
+
+
